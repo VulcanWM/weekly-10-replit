@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Interactive Tutorial on Sets</title>
+    <link href="/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Interactive Tutorial on Sets: Stage 3 Questions</h1>
+    </div>
+    <div class="navbar">
+      <a class="nav-link nav-link-ltr" href="/">Home</a>
+      <a class="nav-link nav-link-ltr" href="/do">Interactive Tutorial on Sets</a>
+      <a class="nav-link nav-link-ltr" href="/setfunctions">Set Functions</a>
+    </div>
+    <div class="content">
+      <form method="POST" action="/3-Questions/{{set1}}/{{set2}}">
+        <p>1) Which symbol means "is not a subset of"?</p>
+        <br>
+        <select name="a" id="a" required>
+          <option value="is">⊂</option>
+          <option value="isnot">⊄</option>
+          <option value="contains">⊃</option>
+          <option value="containsnot">⊅</option>
+        </select>
+        <br>
+        <p>2) Which symbol means "doesn't countain as a subset"?</p>
+        <br>
+        <select name="b" id="b" required>
+          <option value="is">⊂</option>
+          <option value="isnot">⊄</option>
+          <option value="contains">⊃</option>
+          <option value="containsnot">⊅</option>
+        </select>
+        <br>
+        <!-- <p>3) Find the union of {{set1}} and {{set2}}</p>
+        <input type="text" name="c" id="c" required>
+        <br>
+        <p>4) Find the intersection of {{set1}} and {{set2}}</p>
+        <input type="text" name="c" id="c" required>
+        <br> -->
+        <button>SUBMIT</button>
+      </form>
+    </div>
+    <script src="/sticky.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Interactive Tutorial on Sets</title>
+    <link href="/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Interactive Tutorial on Sets</h1>
+    </div>
+    <div class="navbar">
+      <a class="nav-link nav-link-ltr" href="/">Home</a>
+      <a class="nav-link nav-link-ltr" href="/do">Interactive Tutorial on Sets</a>
+      <a class="nav-link nav-link-ltr" href="/setfunctions">Set Functions</a>
+    </div>
+    <div class="content">
+      <h3>VulcanWM's Weekly10 Submission</h3>
+      <p>You must allow cookies from this website to get the full experience</p>
+      {% if start == False %}
+        <p>Click <a href="/start">here</a> to start the interactive tutorial!</p>
+      {% else %}
+        <p>Click <a href="/do">here</a> to continue the interactive tutorial!</p>
+      {% endif %}
+      <br>
+      <p><strong>Most of the info on this website comes from <a href="https://www.amazon.co.uk/Maths-Practice-Revision-Bk-4/dp/1872686028/ref=pd_lpo_2?pd_rd_i=1872686028&psc=1">Peter Robson Book 4</a></strong></p>
+    </div>
+    <script src="/sticky.js"></script>
+  </body>
+</html>

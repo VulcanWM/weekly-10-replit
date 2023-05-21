@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Interactive Tutorial on Sets</title>
+    <link href="/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Interactive Tutorial on Sets: Stage 1 Questions</h1>
+    </div>
+    <div class="navbar">
+      <a class="nav-link nav-link-ltr" href="/">Home</a>
+      <a class="nav-link nav-link-ltr" href="/do">Interactive Tutorial on Sets</a>
+      <a class="nav-link nav-link-ltr" href="/setfunctions">Set Functions</a>
+    </div>
+    <div class="content">
+      <form method="POST" action="/1-Questions/{{object1}}/{{letter1}}/{{object2}}/{{letter2}}/{{object3}}">
+        <p>1) Write, using brackets, the set of {{object1}}</p>
+        The set of {{object1}}<br><input type="text" name="a" id="a" required>
+        <br>
+        <p>2) Write, using letters and brackets</p>
+        Set {{letter1}} is the set of {{object2}}<br><input type="text" name="b" id="b" required>
+        <br>
+        <p>3) Write using signs ∈ and ∉</p>
+        <label for="c">{{letter2}} ? {{object3}}</label>
+        <br>
+        <select name="c" id="c" required>
+          <option value="is">∈</option>
+          <option value="isnot">∉</option>
+        </select>
+        <br>
+        <button>SUBMIT</button>
+      </form>
+    </div>
+    <script src="/sticky.js"></script>
+  </body>
+</html>

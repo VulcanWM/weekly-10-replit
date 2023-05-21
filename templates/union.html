@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Find set stuff</title>
+    <link href="/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Find set stuff</h1>
+    </div>
+    <div class="navbar">
+      <a class="nav-link nav-link-ltr" href="/">Home</a>
+      <a class="nav-link nav-link-ltr" href="/do">Interactive Tutorial on Sets</a>
+      <a class="nav-link nav-link-ltr" href="/setfunctions">Set Functions</a>
+    </div>
+    <div class="content">
+      <p>Find out the union, intersection and cartesian product of 2-4 sets</p>
+      <p>If you only have the two sets, input them in the first two inputs and you will get the difference of the two sets in the format. The difference will be the first set - the second set.</p>
+      <p>The intersection will be of all of the sets.</p>
+      <br>
+      {% if error != None %}
+        <p>{{error}}</p>
+      {% endif %}
+      {% if answer != None %}
+        <p>{{answer | safe}}</p>
+      {% endif %}
+      <form method="POST" action="/setfunctions">
+      <p>Enter your sets below (two minimum, four maximum). Separate each element with a comma</p>
+        First set: (required):{<input type="text" name="a" id="a" required>}
+        <br>
+        Second set (required):{<input type="text" name="b" id="b" required>}
+        <br>
+        Third set (optional):{<input type="text" name="c" id="c">}
+        <br>
+        Fourth set (optional):{<input type="text" name="d" id="d">}
+        <button>FIND SET STUFF</button>
+      </form>
+    </div>
+    <script src="/sticky.js"></script>
+  </body>
+</html>

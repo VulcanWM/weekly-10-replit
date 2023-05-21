@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Interactive Tutorial on Sets</title>
+    <link href="/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Interactive Tutorial on Sets: Stage 2 Questions</h1>
+    </div>
+    <div class="navbar">
+      <a class="nav-link nav-link-ltr" href="/">Home</a>
+      <a class="nav-link nav-link-ltr" href="/do">Interactive Tutorial on Sets</a>
+      <a class="nav-link nav-link-ltr" href="/setfunctions">Set Functions</a>
+    </div>
+    <div class="content">
+      <form method="POST" action="/2-Questions/{{theset}}">
+        <p>1) Select the shape that a venn diagram can't be drawn as</p>
+        <br>
+        <select name="a" id="a" required>
+          <option value="oval">Oval</option>
+          <option value="circle">Rough circle</option>
+          <option value="square">Rough square</option>
+          <option value="egg">Egg shape</option>
+        </select>
+        <br>
+        <p>2) Which symbol is for showing a null set?</p>
+        <br>
+        <select name="b" id="b" required>
+          <option value="is">∈</option>
+          <option value="null">Ø</option>
+          <option value="isnot">∉</option>
+          <option value="pi">π</option>
+        </select>
+        <br>
+        <p>3) Complete the setence: </p>
+        <p>set A = {{theset}}</p>
+        n(<input type="text" name="c" id="c" required>
+        <br>
+        <button>SUBMIT</button>
+      </form>
+    </div>
+    <script src="/sticky.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Interactive Tutorial on Sets</title>
+    <link href="/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Interactive Tutorial on Sets</h1>
+    </div>
+    <div class="navbar">
+      <a class="nav-link nav-link-ltr" href="/">Home</a>
+      <a class="nav-link nav-link-ltr" href="/do">Interactive Tutorial on Sets</a>
+      <a class="nav-link nav-link-ltr" href="/setfunctions">Set Functions</a>
+    </div>
+    <div class="content">
+      {% if course == False %}
+        <h2>Questions on Stage {{stagenumber}} Feedback</h2>
+        {{feedback | safe}}
+        <p>Click <a href="/changestage/{{new}}-Info">here</a> if you want to go onto the next stage or click <a href="/do">here</a> if you want to do the quiz again.</p>
+      {% else %}
+        <h2>Questions on Stage {{stagenumber}} Feedback</h2>
+        {{feedback | safe}}
+        <h2>Course finished!</h2>
+        <p>Click <a href="/changestage/1-Info">here</a> if you want to start again.</p>
+      {% endif %}
+    </div>
+    <script src="/sticky.js"></script>
+  </body>
+</html>
